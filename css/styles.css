@@ -44,6 +44,11 @@ body {
   margin: 0 auto;
   /* outline: 2px solid red; */
 }
+.header-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -124,7 +129,7 @@ body {
 }
 .hero-title {
   width: 696px;
-
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -231,8 +236,8 @@ body {
   padding-bottom: 30px;
 }
 .workers-name {
-  /* margin-top: 30px;
-  margin-bottom: 10px; */
+  /* margin-top: 30px; */
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -240,7 +245,6 @@ body {
   letter-spacing: 0.03em;
 }
 .workers-text {
-  padding-top: 10px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -296,10 +300,14 @@ body {
   justify-content: center;
   margin-bottom: 54px;
 }
-.button-item {
+/* .button-item {
   padding-left: 4px;
   padding-right: 4px;
-  /* padding-bottom: 54px; */
+  padding-bottom: 54px;
+ } */
+
+.button-item + .button-item {
+  margin-left: 8px;
 }
 .portfolio-button {
   border-color: #f5f4fa;
@@ -324,9 +332,6 @@ body {
   margin-top: -30px;
 }
 .portfolio-item {
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
   margin-top: var(--card-gap);
   margin-left: var(--card-gap);
   flex-basis: calc(100% / 3 - var(--card-gap));
@@ -351,6 +356,9 @@ body {
   color: var(--title-text-color);
 }
 .portfolio-desc {
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
