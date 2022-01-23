@@ -2,7 +2,9 @@
   --primary-text-color: #212121;
   --title-text-color: #757575;
   --accent-color: #2196f3;
+  --card-gap: 30px;
 }
+
 p,
 h1,
 h2,
@@ -24,6 +26,8 @@ button {
   cursor: pointer;
 }
 img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 body {
@@ -49,7 +53,8 @@ body {
   border-bottom: 1px solid #e5e5e5;
 }
 .logo {
-  margin-right: 93px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
@@ -66,6 +71,7 @@ body {
   justify-content: center;
 }
 .navigation-list {
+  margin-left: 93px;
   display: flex;
 }
 
@@ -75,7 +81,7 @@ body {
 }
 .header-list {
   display: flex;
-  margin-left: 331px;
+  margin-left: auto;
 }
 .header-link {
   display: block;
@@ -99,8 +105,8 @@ body {
   color: var(--accent-color);
 }
 
-.header-link-tel,
-.header-link-mail {
+.header-link.tel,
+.header-link.mail {
   color: var(--title-text-color);
 }
 /* Основной контент */
@@ -143,7 +149,9 @@ body {
   font-style: inherit;
 }
 /* Наши преимущества */
-
+.advantages.section {
+  padding-bottom: 0px;
+}
 .visually-hiden {
   display: none;
 }
@@ -209,7 +217,7 @@ body {
 .workers-item {
   background-color: #ffffff;
   width: 270px;
-  height: 368px;
+  /* height: 368px; */
   border-radius: 10px;
 }
 .workers-item + .workers-item {
@@ -218,9 +226,13 @@ body {
 .workers-img {
   align-self: flex-start;
 }
+.workers-desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .workers-name {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  /* margin-top: 30px;
+  margin-bottom: 10px; */
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -228,6 +240,7 @@ body {
   letter-spacing: 0.03em;
 }
 .workers-text {
+  padding-top: 10px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -242,8 +255,9 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-logo {
-  /* padding-top: 60px; */
+  display: block;
   margin-bottom: 20px;
 }
 .footer-studio {
@@ -280,10 +294,17 @@ body {
 .button-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  /* margin-bottom: 54px; */
+  /* margin-bottom: 50px; */
+  /* margin-bottom: 34px; */
 }
-.button-item + .button-item {
+/* .button-item + .button-item {
   margin-left: 10px;
+} */
+.button-item {
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 54px;
 }
 .portfolio-button {
   border-color: #f5f4fa;
@@ -304,16 +325,23 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .portfolio-item {
-  margin-left: 30px;
-  height: 404px;
-  outline: 1px solid #eeeeee;
-  margin-top: 30px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  margin-top: var(--card-gap);
+  margin-left: var(--card-gap);
+  flex-basis: calc(100% / 3 - var(--card-gap));
 }
+/* .portfolio-link {
+  margin-top: 30px;
+  margin-right: 30px;
+  flex-basis: calc(100% / 3 -30px);
+} */
 .portfolio-title {
-  margin-bottom: 4px;
-  margin-top: 20px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -326,4 +354,10 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.portfolio-desc {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }

@@ -7,7 +7,7 @@
     <title>WebStudio</title>
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,12 +39,12 @@
 
           <ul class="header-list">
             <li class="header-item">
-              <a href="mailto:info@devstudio.com" class="header-link-mail"
+              <a href="mailto:info@devstudio.com" class="header-link mail"
                 >info@devstudio.com</a
               >
             </li>
             <li class="header-item">
-              <a href="tel:+380961111111" class="header-link-tel"
+              <a href="tel:+380961111111" class="header-link tel"
                 >+38 096 111 11 11
               </a>
             </li>
@@ -141,8 +141,10 @@
                 alt="Изображен Игорь Демьяненко"
                 class="workers-img"
               />
-              <h3 class="workers-name">Игорь Демьяненко</h3>
-              <p class="workers-text">Product Designer</p>
+              <div class="workers-desc">
+                <h3 class="workers-name">Игорь Демьяненко</h3>
+                <p class="workers-text">Product Designer</p>
+              </div>
             </li>
             <li class="workers-item">
               <img
@@ -151,8 +153,10 @@
                 alt="Изображена Ольга Репина"
                 class="workers-img"
               />
-              <h3 class="workers-name">Ольга Репина</h3>
-              <p class="workers-text">Frontend Developer</p>
+              <div class="workers-desc">
+                <h3 class="workers-name">Ольга Репина</h3>
+                <p class="workers-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="workers-item">
               <img
@@ -161,8 +165,10 @@
                 alt="Изображен Николай Тарасов"
                 class="workers-img"
               />
-              <h3 class="workers-name">Николай Тарасов</h3>
-              <p class="workers-text">Marketing</p>
+              <div class="workers-desc">
+                <h3 class="workers-name">Николай Тарасов</h3>
+                <p class="workers-text">Marketing</p>
+              </div>
             </li>
             <li class="workers-item">
               <img
@@ -171,8 +177,10 @@
                 alt="Изображен Михаил Ермаков"
                 class="workers-img"
               />
-              <h3 class="workers-name">Михаил Ермаков</h3>
-              <p class="workers-text">UI Designer</p>
+              <div class="workers-desc">
+                <h3 class="workers-name">Михаил Ермаков</h3>
+                <p class="workers-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -181,11 +189,10 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-logo">
-          <a href="./index.html" class="logo"
-            >Web<span class="footer-studio">Studio</span></a
-          >
-        </div>
+        <a href="./index.html" class="logo footer-logo"
+          >Web<span class="footer-studio">Studio</span></a
+        >
+
         <address class="address">
           <ul class="address-list">
             <li class="address-item">
