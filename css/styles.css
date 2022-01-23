@@ -294,17 +294,12 @@ body {
 .button-list {
   display: flex;
   justify-content: center;
-  /* margin-bottom: 54px; */
-  /* margin-bottom: 50px; */
-  /* margin-bottom: 34px; */
+  margin-bottom: 54px;
 }
-/* .button-item + .button-item {
-  margin-left: 10px;
-} */
 .button-item {
   padding-left: 4px;
   padding-right: 4px;
-  padding-bottom: 54px;
+  /* padding-bottom: 54px; */
 }
 .portfolio-button {
   border-color: #f5f4fa;
